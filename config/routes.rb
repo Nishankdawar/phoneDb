@@ -3,10 +3,11 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      post "insert" => "phone_number#insert"
+      post "new_number" => "phone_number#new_number"
+      post "present" => "phone_number#present"
     end
   end
-  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
